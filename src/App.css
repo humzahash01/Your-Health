@@ -1,11 +1,11 @@
 .App-logo {
+  padding-left: 50px;
   height: 80px;
 }
 
 .App-header {
-  background-color: #222;
   padding: 20px;
-  color: white;
+  border-bottom: solid 2px black;
 }
 
 .App-intro {
@@ -16,11 +16,15 @@
   display: flex;
 }
 
+main {
+  padding: 20px;
+}
+
 nav {
   min-width: 200px;
   text-align: center;
   background: #000;
-  min-height: calc(100vh - 123px);
+  min-height: calc(100vh - 125px);
 }
 
 nav a {
@@ -28,11 +32,11 @@ nav a {
 }
 
 nav ul {
-    margin-top: 40px;
+  margin-top: 40px;
 }
 
 nav li {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 /* Form */
