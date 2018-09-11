@@ -4,7 +4,7 @@ class Home extends Component {
   render() {
     return (
       <main>
-        <h1>Your Health</h1>
+        <h1>YourHealth</h1>
         <h2>== HERE FOR YOU ==</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque blandit erat ac ipsum accumsan pulvinar. Etiam tortor lorem, mollis eget nibh tempor, mattis accumsan lectus. Sed in consequat ligula. Curabitur sed purus lacus. Nulla pretium tincidunt aliquet. Etiam nisi sapien, faucibus non nulla in, pharetra luctus ex. In eget tristique dui, euismod luctus arcu. Etiam imperdiet et dui bibendum pharetra. Curabitur id mauris lacus. Suspendisse potenti. Cras finibus libero a quam mattis, eu varius leo auctor. Maecenas nisi lacus, vestibulum sed tincidunt sodales, dictum at turpis. Pellentesque nec lorem vitae justo blandit pretium vel et lectus. Suspendisse aliquam vel ligula sit amet sagittis. Pellentesque lobortis diam vel magna venenatis, vel laoreet ex fermentum.</p>
         <h2>== MAKING THE WORLD A HEALTHIER PLACE ==</h2>
