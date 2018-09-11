@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import Home from './Home';
 import About from './About';
 import Contact from './Contact';
-import logo from './logo.svg';
+import logo from './logo.png';
 import './App.css';
 
 class App extends Component {
