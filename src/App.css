@@ -39,6 +39,14 @@ nav li {
   margin-bottom: 20px;
 }
 
+#home-splash {
+    width: 100%;
+}
+
+#home-content {
+    text-align: center;
+}
+
 /* Form */
 form {
   width: 500px;

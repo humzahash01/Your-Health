@@ -31,6 +31,7 @@ class App extends Component {
           <Route exact path="/" render={() => <Home />} />
           <Route exact path="/about" render={() => <About />} />
           <Route exact path="/contact" render={() => <Contact />} />
+          
         </div>
       </div>
     );
