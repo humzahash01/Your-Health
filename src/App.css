@@ -1,10 +1,9 @@
 .App-logo {
-  padding-left: 50px;
+  padding-left: 70px;
   height: 80px;
 }
 
 .App-header {
-  padding: 20px;
   border-bottom: solid 2px black;
 }
 
@@ -24,7 +23,7 @@ nav {
   min-width: 200px;
   text-align: center;
   background: #000;
-  min-height: calc(100vh - 125px);
+  min-height: calc(100vh - 85px);
 }
 
 nav a {
@@ -45,6 +44,14 @@ nav li {
 
 #home-content {
     text-align: center;
+}
+
+.person-info {
+    display: flex;
+}
+
+.person-info img {
+    min-width: 176px;
 }
 
 /* Form */

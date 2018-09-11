@@ -6,20 +6,29 @@ class About extends Component {
     return (
       <main>
         <h1>About Us</h1>
-        {people.map(person => <Person {...person} />)}
+        {people.map(person => (
+          <Person {...person} />
+        ))}
       </main>
     );
   }
 }
 
-const Person = ({name, position, email, about, img}) => (
-    <div class="person">
-    <h2>{name} - {position}</h2>
-    <img src={`./img/${img}`} />
-    <address><a href={`mailto:${email}`}>{email}</a></address>
-    <div class="description">{about}</div>
+const Person = ({ name, position, email, about, img }) => (
+  <div class="person">
+    <h2>
+      {name} - {position}
+    </h2>
+    <div class="person-info">
+      <img src={`./img/${img}`} />
+      <div class="preson-details">
+        <address>
+          <a href={`mailto:${email}`}>{email}</a>
+        </address>
+        <div class="description">{about}</div>
+      </div>
     </div>
-)
-
+  </div>
+);
 
 export default About;
