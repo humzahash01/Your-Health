@@ -15,24 +15,26 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to React</h1>
         </header>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/about">About us</Link>
-            </li>
-            <li>
-              <Link to="/contact">Contact</Link>
-            </li>
-          </ul>
-        </nav>
-        <main>
-          <Route exact path="/" render={() => <Home />} />
-          <Route exact path="/about" render={() => <About />} />
-          <Route exact path="/contact" render={() => <Contact />} />
-        </main>
+        <div id="wrapper">
+          <nav>
+            <ul>
+              <li>
+                <Link to="/">Home</Link>
+              </li>
+              <li>
+                <Link to="/about">About us</Link>
+              </li>
+              <li>
+                <Link to="/contact">Contact</Link>
+              </li>
+            </ul>
+          </nav>
+          <main>
+            <Route exact path="/" render={() => <Home />} />
+            <Route exact path="/about" render={() => <About />} />
+            <Route exact path="/contact" render={() => <Contact />} />
+          </main>
+        </div>
       </div>
     );
   }
