@@ -6,9 +6,13 @@ class About extends Component {
     return (
       <main>
         <h1>About Us</h1>
-        {people.map(person => (
-          <Person {...person} />
-        ))}
+        <ul>
+          {people.map(person => (
+            <li>
+              <Person {...person} />
+            </li>
+          ))}
+        </ul>
       </main>
     );
   }
