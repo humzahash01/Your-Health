@@ -12,14 +12,16 @@ class Contact extends Component {
     return (
       <main>
         <h1>Contact Us</h1>
-        <ContactForm />
-        <Map
-          isMarkerShown
-          googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp"
-          loadingElement={<div style={{ height: `100%` }} />}
-          containerElement={<div style={{ height: `400px` }} />}
-          mapElement={<div style={{ height: `100%` }} />}
-        />
+        <div id="contact-info">
+          <ContactForm />
+          <Map
+            isMarkerShown
+            googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp"
+            loadingElement={<div style={{ height: `100%` }} />}
+            containerElement={<div style={{ height: `calc(100vh - 220px)`, width: `50%` }} />}
+            mapElement={<div style={{ height: `100%` }} />}
+          />
+        </div>
       </main>
     );
   }

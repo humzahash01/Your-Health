@@ -18,13 +18,14 @@
 
 main {
   padding: 20px;
+  width: 100%;
 }
 
 nav {
   min-width: 200px;
   text-align: center;
   background: #000;
-  min-height: calc(100vh - 85px);
+  min-height: calc(100vh - 86px);
 }
 
 nav a {
@@ -55,9 +56,13 @@ nav li {
     min-width: 176px;
 }
 
+#contact-info {
+    display: flex;
+}
+
 /* Form */
 form {
-  width: 500px;
+  width: 50%;
 }
 
 form div {
