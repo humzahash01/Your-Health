@@ -19,6 +19,20 @@
 nav {
   min-width: 200px;
   text-align: center;
+  background: #000;
+  min-height: calc(100vh - 123px);
+}
+
+nav a {
+  color: #fff;
+}
+
+nav ul {
+    margin-top: 40px;
+}
+
+nav li {
+    margin-bottom: 20px;
 }
 
 /* Form */
