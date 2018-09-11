@@ -13,10 +13,51 @@
 }
 
 #wrapper {
-    display:flex;
+  display: flex;
 }
 
 nav {
-    min-width: 200px;
-    text-align: center;
+  min-width: 200px;
+  text-align: center;
+}
+
+/* Form */
+form {
+  width: 500px;
+}
+
+form div {
+  margin-top: 15px;
+}
+
+label {
+  display: inline-block;
+  padding-right: 5px;
+  text-align: right;
+  width: 100px;
+}
+
+textarea {
+  height: 80px;
+  vertical-align: top;
+}
+
+input,
+textarea {
+  border: 1px solid #888;
+  font: 16px sans-serif;
+  width: 350px;
+}
+
+#button {
+  padding-left: 100px;
+}
+
+button {
+  margin-left: 5px;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #000;
 }
