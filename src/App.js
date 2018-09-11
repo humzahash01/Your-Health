@@ -13,7 +13,6 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
         </header>
         <div id="wrapper">
           <nav>
@@ -29,11 +28,9 @@ class App extends Component {
               </li>
             </ul>
           </nav>
-          <main>
-            <Route exact path="/" render={() => <Home />} />
-            <Route exact path="/about" render={() => <About />} />
-            <Route exact path="/contact" render={() => <Contact />} />
-          </main>
+          <Route exact path="/" render={() => <Home />} />
+          <Route exact path="/about" render={() => <About />} />
+          <Route exact path="/contact" render={() => <Contact />} />
         </div>
       </div>
     );
