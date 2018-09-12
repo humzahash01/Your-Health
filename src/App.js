@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import Home from './Home';
 import About from './About';
 import Contact from './Contact';
@@ -29,13 +29,13 @@ class App extends Component {
           <nav class="toggle-menu">
             <ul>
               <li>
-                <Link to="/">Home</Link>
+                <NavLink exact to="/" activeClassName="active">Home</NavLink>
               </li>
               <li>
-                <Link to="/about">About us</Link>
+                <NavLink exact to="/about" activeClassName="active">About us</NavLink>
               </li>
               <li>
-                <Link to="/contact">Contact</Link>
+                <NavLink exact to="/contact" activeClassName="active">Contact</NavLink>
               </li>
             </ul>
           </nav>
