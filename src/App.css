@@ -29,6 +29,8 @@ h1 {
   font-size: 24px;  
   text-shadow: 0 -1px #fff;
   border-bottom: solid 1px #666;
+  border-radius: 0 0 20px 20px;
+  text-align: center;
 }
 
 header svg {
@@ -36,6 +38,7 @@ header svg {
 }
 
 main {
+  padding: 0px 20px 20px 20px;
   width: 100%;
 }
 
@@ -145,12 +148,14 @@ textarea:focus {
 @media screen and (min-width: 800px) {
   h1 {
       margin: 0 -20px 20px -20px;
+      border-radius: 0;
+      text-align: left;
   }
   .toggle-menu {
     margin-left: 0;
   }
   main {
-    padding: 0px 20px 20px 220px;
+    padding-left: 220px;
   }
   article {
     text-align: left;
