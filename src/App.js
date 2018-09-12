@@ -13,9 +13,14 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
+          <a href="#" onClick={() => document.querySelector('nav').classList.toggle('toggle-menu')}>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25">
+              <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z" />
+            </svg>
+          </a>
         </header>
         <div id="wrapper">
-          <nav>
+          <nav class="toggle-menu">
             <ul>
               <li>
                 <Link to="/">Home</Link>
@@ -31,7 +36,6 @@ class App extends Component {
           <Route exact path="/" render={() => <Home />} />
           <Route exact path="/about" render={() => <About />} />
           <Route exact path="/contact" render={() => <Contact />} />
-          
         </div>
       </div>
     );
