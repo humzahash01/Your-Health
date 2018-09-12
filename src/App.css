@@ -70,6 +70,7 @@ article {
   display: flex;
   padding: 20px 0;
   border-bottom: 1px solid #999;
+  text-align: center;
 }
 
 article img {
@@ -136,6 +137,9 @@ textarea:focus {
   main {
     padding: 20px 20px 20px 220px;
   }
+  article {
+    text-align: left;
+}
   #toggle-link {
     display: none;
   }
@@ -148,4 +152,25 @@ textarea:focus {
     border-radius: 20px 0;
     display: block;
   }
+}
+
+@media screen and (min-width: 1600px) {
+    .App-logo {
+        height: 120px;
+    }
+    nav {
+        min-width: 300px;
+    }
+    nav a {
+        font-size: 22px;
+    }
+    nav li {
+        margin-bottom: 30px;
+    }
+    main {
+        padding-left: 320px;
+    }
+    .App-header {
+        padding: 10px 110px;    
+    }
 }
