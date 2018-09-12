@@ -66,8 +66,16 @@ nav li {
   width: 100%;
 }
 
-#home-content {
-  text-align: center;
+article {
+    display: flex;
+    padding: 20px 0;
+    border-bottom: 1px solid #999;
+}
+
+article img {
+    margin-right: 30px;
+    min-width: 500px;
+    border-radius: 20px 0;
 }
 
 .person-info {
