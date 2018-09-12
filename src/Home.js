@@ -5,7 +5,9 @@ class Home extends Component {
   render() {
     return (
       <main>
+        <h1>YourHealth Ltd.</h1>
         <img id="home-splash" src="./img/mental-health.png" />
+
         {homeArticles.map(article => (
           <Article {...article} />
         ))}
