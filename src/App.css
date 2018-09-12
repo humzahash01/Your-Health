@@ -18,13 +18,13 @@
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 header svg {
-    width: 50px;
-    padding-right: 70px;
+  width: 50px;
+  padding-right: 70px;
 }
 
 main {
@@ -56,27 +56,27 @@ nav li {
 }
 
 .toggle-menu {
-    margin-left: -200px;
+  margin-left: -200px;
 }
 
 #home-splash {
-    width: 100%;
+  width: 100%;
 }
 
 #home-content {
-    text-align: center;
+  text-align: center;
 }
 
 .person-info {
-    display: flex;
+  display: flex;
 }
 
 .person-info img {
-    min-width: 176px;
+  min-width: 176px;
 }
 
 #contact-info {
-    display: flex;
+  display: flex;
 }
 
 /* Form */
@@ -121,10 +121,13 @@ textarea:focus {
 }
 
 @media screen and (min-width: 800px) {
-    .toggle-menu {
-        margin-left: 0
-    }
-    main {
-        padding: 20px 20px 20px 220px;
-    }
+  .toggle-menu {
+    margin-left: 0;
+  }
+  main {
+    padding: 20px 20px 20px 220px;
+  }
+  #toggle-link {
+    display: none;
+  }
 }

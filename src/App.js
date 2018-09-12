@@ -13,7 +13,13 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <a href="#" onClick={() => document.querySelector('nav').classList.toggle('toggle-menu')}>
+          <a
+            id="toggle-link"
+            href="#"
+            onClick={() =>
+              document.querySelector('nav').classList.toggle('toggle-menu')
+            }
+          >
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25">
               <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z" />
             </svg>
