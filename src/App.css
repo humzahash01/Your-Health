@@ -1,11 +1,11 @@
 .App-logo {
-  padding-left: 70px;
   height: 80px;
 }
 
 .App-header {
   border-bottom: solid 2px black;
   box-shadow: 0 2px 10px #222;
+  padding: 0 30px 0 70px;
 }
 
 .App-intro {
@@ -24,7 +24,6 @@ header {
 
 header svg {
   width: 50px;
-  padding-right: 70px;
 }
 
 main {
@@ -57,6 +56,10 @@ nav li {
 
 .toggle-menu {
   margin-left: -200px;
+}
+
+#toggle-link {
+  display: flex;
 }
 
 #home-splash {
