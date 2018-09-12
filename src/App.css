@@ -78,6 +78,9 @@ nav li {
 }
 
 #home-splash {
+  display: block;
+  margin: auto;
+  max-width: 1000px;
   width: 100%;
 }
 
