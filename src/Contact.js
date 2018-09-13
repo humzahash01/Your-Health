@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import {
   InfoWindow,
   GoogleMap,
@@ -7,26 +7,24 @@ import {
   withScriptjs
 } from 'react-google-maps';
 
-class Contact extends Component {
-  render() {
-    return (
-      <main>
-        <h1>Contact Us</h1>
-        <div id="contact-info">
-          <ContactForm />
-          <Map
-            isMarkerShown
-            googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp"
-            loadingElement={<div style={{ height: `100%` }} />}
-            containerElement={<div id="map-container" />}
-            mapElement={<div style={{ height: `100%` }} />}
-          />
-        </div>
-      </main>
-    );
-  }
-}
+/*Contact Page Content*/
+const Contact = () => (
+  <main>
+    <h1>Contact Us</h1>
+    <div id="contact-info">
+      <ContactForm />
+      <Map
+        isMarkerShown
+        googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp"
+        loadingElement={<div style={{ height: `100%` }} />}
+        containerElement={<div id="map-container" />}
+        mapElement={<div style={{ height: `100%` }} />}
+      />
+    </div>
+  </main>
+);
 
+/*Contact Form*/
 const ContactForm = () => (
   <form>
     <div>
@@ -50,9 +48,13 @@ const ContactForm = () => (
   </form>
 );
 
+/*Google Map*/
 const Map = withScriptjs(
   withGoogleMap(props => (
-    <GoogleMap defaultZoom={12} defaultCenter={{ lat: 53.82048, lng: -1.25199 }}>
+    <GoogleMap
+      defaultZoom={12}
+      defaultCenter={{ lat: 53.82048, lng: -1.25199 }}
+    >
       {props.isMarkerShown && (
         <Marker position={{ lat: 53.82048, lng: -1.25199 }}>
           <InfoWindow>

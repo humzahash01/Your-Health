@@ -1,19 +1,16 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { homeArticles } from './data';
 
-class Home extends Component {
-  render() {
-    return (
-      <main>
-        <h1>YourHealth Ltd.</h1>
-        <img id="home-splash" src="./img/mental-health.png" />
-        {homeArticles.map(article => (
-          <Article {...article} />
-        ))}
-      </main>
-    );
-  }
-}
+/*Home Page Content*/
+const Home = () => (
+  <main>
+    <h1>YourHealth Ltd.</h1>
+    <img id="home-splash" src="./img/mental-health.png" />
+    {homeArticles.map(article => (
+      <Article {...article} />
+    ))}
+  </main>
+);
 
 const Article = ({ title, content, img }) => (
   <article>

@@ -1,3 +1,4 @@
+/*Staff members*/
 export const people = [
   {
     name: 'Jennifer Dyer',
@@ -25,6 +26,7 @@ export const people = [
   }
 ];
 
+/*Articles on the home page*/
 export const homeArticles = [
   {
     title: 'Here For You',
@@ -45,7 +47,7 @@ export const homeArticles = [
     }
   },
   {
-    title: 'Medication\'s What You Need',
+    title: "Medication's What You Need",
     content:
       'Sed placerat accumsan tellus a viverra. Aliquam aliquam cursus ligula, sit amet aliquam metus condimentum et. Etiam sed nisi nec est venenatis accumsan. Duis tristique, turpis non tincidunt sagittis, sapien sem tempor nibh, ut posuere tortor sem luctus eros. Duis egestas erat ac eleifend commodo. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce tincidunt, lectus eget porttitor tempus, lorem erat mollis lacus, id imperdiet lacus diam quis dolor.',
     img: {
