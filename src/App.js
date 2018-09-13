@@ -7,19 +7,17 @@ import Contact from './Contact';
 import logo from './logo.png';
 import './App.css';
 
+//Toggles nav menu visibility
+const toggleNav = () =>
+  document.querySelector('nav').classList.toggle('toggle-menu');
+
 class App extends Component {
   render() {
     return (
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <a
-            id="toggle-link"
-            href="#"
-            onClick={() =>
-              document.querySelector('nav').classList.toggle('toggle-menu')
-            }
-          >
+          <a id="toggle-link" href="#" onClick={toggleNav}>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25">
               <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z" />
             </svg>
@@ -28,15 +26,9 @@ class App extends Component {
         <div id="wrapper">
           <nav class="toggle-menu">
             <ul>
-              <li>
-                <NavLink exact to="/" activeClassName="active">Home</NavLink>
-              </li>
-              <li>
-                <NavLink exact to="/about" activeClassName="active">About us</NavLink>
-              </li>
-              <li>
-                <NavLink exact to="/contact" activeClassName="active">Contact</NavLink>
-              </li>
+              <NavLinkItem anchor="Home" path="/" />
+              <NavLinkItem anchor="About Us" path="/about" />
+              <NavLinkItem anchor="Contact" path="/contact" />
             </ul>
           </nav>
           <Route exact path="/" render={() => <Home />} />
@@ -47,5 +39,13 @@ class App extends Component {
     );
   }
 }
+
+const NavLinkItem = ({ anchor, path }) => (
+  <li>
+    <NavLink exact to={path} activeClassName="active" onClick={toggleNav}>
+      {anchor}
+    </NavLink>
+  </li>
+);
 
 export default App;
