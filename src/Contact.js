@@ -18,7 +18,7 @@ class Contact extends Component {
             isMarkerShown
             googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp"
             loadingElement={<div style={{ height: `100%` }} />}
-            containerElement={<div style={{ height: `calc(100vh - 220px)`, width: `50%` }} />}
+            containerElement={<div id="map-container" />}
             mapElement={<div style={{ height: `100%` }} />}
           />
         </div>
@@ -52,12 +52,12 @@ const ContactForm = () => (
 
 const Map = withScriptjs(
   withGoogleMap(props => (
-    <GoogleMap defaultZoom={8} defaultCenter={{ lat: 53.82048, lng: -1.25199 }}>
+    <GoogleMap defaultZoom={12} defaultCenter={{ lat: 53.82048, lng: -1.25199 }}>
       {props.isMarkerShown && (
         <Marker position={{ lat: 53.82048, lng: -1.25199 }}>
           <InfoWindow>
             <address>
-              YourHealth Ltd.
+              <span>YourHealth Ltd.</span>
               <br />
               Common Rd,
               <br />
