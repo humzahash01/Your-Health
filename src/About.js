@@ -25,11 +25,12 @@ const Person = ({ name, position, email, about, img }) => (
     </h2>
     <div class="person-info">
       <img src={`./img/${img}`} />
-      <div class="preson-details">
+      <div class="person-details">
+      <div class="person-description">{about}</div>
         <address>
           <a href={`mailto:${email}`}>{email}</a>
         </address>
-        <div class="description">{about}</div>
+        
       </div>
     </div>
   </div>

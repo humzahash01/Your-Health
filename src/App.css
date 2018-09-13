@@ -26,7 +26,7 @@ h1 {
   color: #111;
   font-weight: lighter;
   margin-top: 0;
-  font-size: 24px;  
+  font-size: 24px;
   text-shadow: 0 -1px #fff;
   border-bottom: solid 1px #666;
   border-radius: 0 0 20px 20px;
@@ -93,11 +93,25 @@ article {
 }
 
 article:first-of-type {
-    border-top: 1px solid #bbb;
+  border-top: 1px solid #bbb;
 }
 
 article img {
   display: none;
+}
+
+.person {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: solid 1px #bbb;
+}
+
+.person h2 {
+  font-size: 18px;
+}
+
+.person-details {
+    align-self: center;
 }
 
 .person-info {
@@ -105,7 +119,10 @@ article img {
 }
 
 .person-info img {
-  min-width: 176px;
+  align-self: center;
+  width: 85px;
+  height: 85px;
+  padding-right: 10px;
 }
 
 #contact-info {
@@ -153,11 +170,27 @@ textarea:focus {
   border-color: #000;
 }
 
+@media screen and (min-width: 600px) {
+  .person img {
+    width: 176px;
+    height: 176px;
+  }
+  .person h2 {
+    font-size: 22px;
+  }
+  .person address {
+    font-size: 20px;
+  }
+  .person-description {
+    margin-bottom: 8px;
+  }
+}
+
 @media screen and (min-width: 800px) {
   h1 {
-      margin: 0 -20px 20px -20px;
-      border-radius: 0;
-      text-align: left;
+    margin: 0 -20px 20px -20px;
+    border-radius: 0;
+    text-align: left;
   }
   .toggle-menu {
     margin-left: 0;
@@ -171,6 +204,15 @@ textarea:focus {
   #toggle-link {
     display: none;
   }
+  .person {
+    border: solid 1px #bbb;
+    padding: 20px;
+    border-radius: 20px 0;
+    box-shadow: 2px 2px 10px #666;
+  }
+  .person h2 {
+    font-size: 24px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -179,6 +221,9 @@ textarea:focus {
     min-width: 500px;
     border-radius: 20px 0;
     display: block;
+  }
+  .person {
+    max-width: 1000px;
   }
 }
 
