@@ -14,6 +14,9 @@ This project involves creating a simple three page website for an imaginary heal
 * You can use 3rd party javascript libraries but you should justify why it is the correct library for the job. 
 * All 3rd party libraries must be included in the delivery 
 * Delivery The completed webpage should be delivered via source control (such as GitHub or Bitbucket) and optionally hosted in live demo form if you have a file host to upload it to. 
+* We do not expect you to implement the web form sending functionality. Just the display of the form is required.
+* The sidebar must be black.
+* The main content background must be white.
 
 ## Installation
 
