@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import Home from './Home';
 import About from './About';
 import Contact from './Contact';
@@ -14,7 +14,9 @@ const toggleNav = () =>
 const App = () => (
   <div>
     <header>
-      <img src={logo} className="logo" alt="logo" />
+        <Link to="/">
+        <img src={logo} className="logo" alt="logo" />
+        </Link>
       {/*Hamburger only visible on mobile*/}
       <a id="toggle-link" href="#" onClick={toggleNav}>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25">
