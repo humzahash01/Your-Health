@@ -5,9 +5,13 @@ import { homeArticles } from './data';
 const Home = () => (
   <main>
     <h1>YourHealth Ltd.</h1>
-    <img id="home-splash" src="./img/mental-health.png" />
+    <img
+      id="home-splash"
+      src="./img/mental-health.png"
+      alt="How YourHealth can help"
+    />
     {homeArticles.map(article => (
-      <Article {...article} />
+      <Article key={article.title} {...article} />
     ))}
   </main>
 );

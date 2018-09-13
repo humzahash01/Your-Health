@@ -23,7 +23,7 @@ const App = () => (
       </a>
     </header>
     <div id="wrapper">
-      <nav class="toggle-menu">
+      <nav className="toggle-menu">
         <ul>
           <NavLinkItem anchor="Home" path="/" />
           <NavLinkItem anchor="About Us" path="/about" />
