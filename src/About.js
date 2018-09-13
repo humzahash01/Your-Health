@@ -22,7 +22,7 @@ const Person = ({ name, position, email, about, img }) => (
       {name} - {position}
     </h2>
     <div class="person-info">
-      <img src={`./img/${img}`} alt={name} />
+      <img src={`..${process.env.PUBLIC_URL}/img/${img}`} alt={name} />
       <div class="person-details">
         <div class="person-description">{about}</div>
         <address>

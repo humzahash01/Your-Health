@@ -7,7 +7,7 @@ const Home = () => (
     <h1>YourHealth Ltd.</h1>
     <img
       id="home-splash"
-      src="./img/mental-health.png"
+      src={`..${process.env.PUBLIC_URL}/img/mental-health.png`}
       alt="How YourHealth can help"
     />
     {homeArticles.map(article => (
@@ -18,7 +18,7 @@ const Home = () => (
 
 const Article = ({ title, content, img }) => (
   <article>
-    <img src={`./img/${img.name}`} alt={img.alt} />
+    <img src={`..${process.env.PUBLIC_URL}/img/${img.name}`} alt={img.alt} />
     <div>
       <h2>{title}</h2>
       <p>{content}</p>
