@@ -13,13 +13,6 @@ const Contact = () => (
     <h1>Contact Us</h1>
     <div id="contact-info">
       <ContactForm />
-      <Map
-        isMarkerShown
-        googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp"
-        loadingElement={<div style={{ height: `100%` }} />}
-        containerElement={<div id="map-container" />}
-        mapElement={<div style={{ height: `100%` }} />}
-      />
     </div>
   </main>
 );
@@ -48,33 +41,6 @@ const ContactForm = () => (
   </form>
 );
 
-/*Google Map*/
-const Map = withScriptjs(
-  withGoogleMap(props => (
-    <GoogleMap
-      defaultZoom={12}
-      defaultCenter={{ lat: 53.82048, lng: -1.25199 }}
-    >
-      {props.isMarkerShown && (
-        <Marker position={{ lat: 53.82048, lng: -1.25199 }}>
-          <InfoWindow>
-            <address>
-              <span>YourHealth Ltd.</span>
-              <br />
-              Common Rd,
-              <br />
-              Tadcaster
-              <br />
-              LS24 9UN,
-              <br />
-              UK
-              <br />
-            </address>
-          </InfoWindow>
-        </Marker>
-      )}
-    </GoogleMap>
-  ))
-);
+
 
 export default Contact;

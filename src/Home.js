@@ -4,7 +4,7 @@ import { homeArticles } from './data';
 /*Home Page Content*/
 const Home = () => (
   <main>
-    <h1>YourHealth Ltd.</h1>
+    <h1>THE 2 MONKEYS  NOTHING SAID, NOTHING HEARD</h1>
     <img
       id="home-splash"
       src={`..${process.env.PUBLIC_URL}/img/mental-health.png`}
